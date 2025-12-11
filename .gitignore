@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Środowiska wirtualne
+env/
+venv/
+.venv/
+
+# Pliki konfiguracyjne zależne od maszyny
+instance/
+*.sqlite3
+# Flask / Cache
+
+*.log
+*.pid
+
+# Celery
+
+celerybeat-schedule*
+celerybeat.pid
+
+# System / IDE
+.vscode/
+*.swp
+*.swo
+
+#Doker
+*.tar
