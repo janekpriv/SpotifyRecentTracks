@@ -17,8 +17,8 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config['broker_url'] = 'redis://localhost:6379/0'
 app.config['result_backend'] = 'redis://localhost:6379/0'
 
-CLIENT_ID = '8174df7164fc48bd9568f1766d54b0a8'
-CLIENT_SECRET = 'd389cea99e3b4436bdf741e5b131246f'
+CLIENT_ID = ''
+CLIENT_SECRET = ''
 REDIRECT_URI = 'http://185.237.14.36:8000/callback'
 API_BASE_URL = 'https://api.spotify.com/v1/'
 TOKEN_URL = 'https://accounts.spotify.com/api/token'
