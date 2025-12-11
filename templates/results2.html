@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/results.css') }}">
+    <title>Czego się słucha?</title>
+</head>
+<body>
+    {%for data in values%}
+    <div class="card">
+        <h3>{{data.username}} słuchał(a) ostatnio</h3>
+        <div class="content">
+            <!-- Profil -->
+            <div class="profile">
+                <img src="{{data.profile_pic}}" alt="Profil" class="profile-img">
+            </div>
+            <!-- Albumy -->
+            <div class="albums">
+                <div class="album">
+                    <img src="{{data.song1_img}}" alt="fajny album" class="album-img">
+                    <h4>{{data.song1}} by {{data.song1art}}</h4>
+                </div>
+                <div class="album">
+                    <img src="{{data.song2_img}}" alt="fajny album" class="album-img">
+                    <h4>{{data.song2}} by {{data.song2art}}</h4>
+                </div>
+                <div class="album">
+                    <img src="{{data.song3_img}}" alt="fajny album" class="album-img">
+                    <h4>{{data.song3}} by {{data.song3art}}</h4>
+                </div>
+                <div class="album">
+                    <img src="{{data.song4_img}}" alt="fajny album" class="album-img">
+                    <h4>{{data.song4}} by {{data.song4art}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    
+    <script>
+        setTimeout(() => {
+            window.location.reload();
+        }, 10000); // Odświeżenie co 10000 ms (10 sekund)
+    </script>
+    
+</body>
+</html>

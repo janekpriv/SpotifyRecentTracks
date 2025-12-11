@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/results.css') }}">
+    <title>Czego się słucha?</title>
+</head>
+<body>
+    <div class="card">
+        <h3>{{userData['display_name']}} słuchał ostatnio</h3>
+        <div class="content">
+            <!-- Profil -->
+            <div class="profile">
+                {% if userData['images'] != [] %}
+                <img src="{{profilepic}}" alt="Profil" class="profile-img">
+                {% else %}
+                <img src="https://static-00.iconduck.com/assets.00/spotify-icon-1024x1024-7zm2z9zz.png" alt="Profil" class="profile-img">
+                {% endif %}
+            </div>
+            <!-- Albumy -->
+            <div class="albums">
+                <div class="album">
+                    <img src="{{img_url[0]}}" alt="fajny album" class="album-img">
+                    <h4>{{track_name[0]}} by {{artists_name[0]}}</h4>
+                </div>
+                <div class="album">
+                    <img src="{{img_url[1]}}" alt="fajny album" class="album-img">
+                    <h4>{{track_name[1]}} by {{artists_name[1]}}</h4>
+                </div>
+                <div class="album">
+                    <img src="{{img_url[2]}}" alt="fajny album" class="album-img">
+                    <h4>{{track_name[2]}} by {{artists_name[2]}}</h4>
+                </div>
+                <div class="album">
+                    <img src="{{img_url[3]}}" alt="fajny album" class="album-img">
+                    <h4>{{track_name[2]}} by {{artists_name[2]}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        setTimeout(() => {
+            window.location.reload();
+        }, 10000); // Odświeżenie co 10000 ms (10 sekund)
+    </script>
+</body>
+</html>
