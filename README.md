@@ -1,4 +1,4 @@
-# 🎧 Spotify Lead Analyzer – Flask + Celery + Docker
+#  Spotify Lead Analyzer – Flask + Celery + Docker
 
 Aplikacja została stworzona w celu zbudowania kompletnego systemu backendowego do obsługi logowania użytkowników przez **Spotify OAuth**, pobierania ich danych oraz asynchronicznego przetwarzania zadań w tle za pomocą **Celery**. Projekt ma charakter edukacyjno-praktyczny i służył do nauczenia się:
 
@@ -10,18 +10,18 @@ Aplikacja została stworzona w celu zbudowania kompletnego systemu backendowego 
 
 ---
 
-## 🚀 Funkcjonalności
+## Funkcjonalności
 
-* 🔐 Logowanie użytkownika przez **Spotify OAuth**
-* 🎵 Pobieranie danych użytkownika (np. top songs, profile info)
-* 🧵 Asynchroniczne zadania wykonywane przez **Celery Worker**
-* 🗄️ Dane użytkowników zapisywane w lokalnej bazie **SQLite**
-* 🐳 Uruchamianie całości w kontenerach **Docker**
-* 🌐 Możliwość wdrożenia na serwer VPS i podpięcia domeny
+*  Logowanie użytkownika przez **Spotify OAuth**
+*  Pobieranie danych użytkownika (np. top songs, profile info)
+*  Asynchroniczne zadania wykonywane przez **Celery Worker**
+*  Dane użytkowników zapisywane w lokalnej bazie **SQLite**
+*  Uruchamianie całości w kontenerach **Docker**
+*  Możliwość wdrożenia na serwer VPS i podpięcia domeny
 
 ---
 
-## 📂 Struktura projektu
+##  Struktura projektu
 
 ```
 .
@@ -41,7 +41,7 @@ Aplikacja została stworzona w celu zbudowania kompletnego systemu backendowego 
 
 ---
 
-## ⚙️ Wymagane usługi
+##  Wymagane usługi
 
 * **Flask** – backend / API
 * **Celery** – obsługa zadań w tle
@@ -50,7 +50,7 @@ Aplikacja została stworzona w celu zbudowania kompletnego systemu backendowego 
 
 ---
 
-## 🐳 Uruchamianie projektu lokalnie (Docker)
+##  Uruchamianie projektu lokalnie (Docker)
 
 1. Zbuduj i uruchom kontenery:
 
@@ -72,7 +72,7 @@ Aplikacja została stworzona w celu zbudowania kompletnego systemu backendowego 
 
 ---
 
-## 🌍 Deployment na VPS
+##  Deployment na VPS
 
 1. Sklonuj projekt na serwer:
 
@@ -121,7 +121,7 @@ Dzięki temu:
 
 ---
 
-## 🔁 Celery
+##  Celery
 
 Worker uruchamiany jest w kontenerze:
 
@@ -133,7 +133,7 @@ celery_worker:
 Wysyłanie zadań działa po stronie aplikacji, zapisując efekty do SQLite.
 
 
-## 📜 Licencja
+##  Licencja
 
 Projekt jest swobodnie modyfikowalny do użytku własnego.
 
