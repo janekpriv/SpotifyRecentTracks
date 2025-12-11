@@ -1,0 +1,45 @@
+/* Resetowanie marginesów i paddingu */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Spotify Circular', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Kolor tła Spotify */
+    color: #FFFFFF; /* Biały tekst */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0 0 50px;
+    font-family: 'Spotify Circular', Arial, sans-serif;
+}
+
+.login-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #1DB954; /* Zielony kolor Spotify */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.login-button:hover {
+    background-color: #1ED760; /* Jaśniejszy zielony na hover */
+}
+
+.login{
+    text-decoration: none;
+    color: white;
+}

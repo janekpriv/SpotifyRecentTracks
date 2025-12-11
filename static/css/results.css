@@ -1,0 +1,97 @@
+/* Ogólny styl strony */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+
+
+/* Styl karty */
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Nagłówki */
+.card h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Kontener zawartości */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Styl obrazu profilowego */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styl albumów */
+.albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.album {
+    text-align: center;
+}
+
+.album-img {
+    width: 100%;
+    max-width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.album h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    word-wrap: break-word;
+}
+
+/* Układ dla dużych ekranów */
+@media (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 kolumny */
+        grid-template-rows: repeat(3, auto); /* 3 wiersze */
+        gap: 20px; /* Odstępy między kafelkami */
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%; /* Dopasowanie kart do siatki */
+        max-width: none; /* Brak ograniczenia szerokości */
+        margin: 0; /* Usunięcie zewnętrznych marginesów */
+    }
+}
